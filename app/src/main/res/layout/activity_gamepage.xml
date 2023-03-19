@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backyellow"
+    tools:context=".gamepage">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Game is ON" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/backyell"
+            app:cardCornerRadius="50dp"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/imageDice"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/buttonRoll"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@drawable/dice1" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonRoll"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="130dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/backyell"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30dp"
+            android:text="Roll Dice" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="right"
+        android:gravity="bottom"
+        android:textSize="20dp"
+        android:text="having problem ?" />
+
+
+</LinearLayout>
